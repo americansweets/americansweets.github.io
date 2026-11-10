@@ -45,6 +45,8 @@ a{color:#fff8ee}a:hover{color:#ffffff}
 .flagfade{-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 45%);mask-image:linear-gradient(90deg,transparent 0%,#000 45%)}
 @media (prefers-reduced-motion: reduce){.stripes,.pulse,.float1,.float2,.float3,.wave,.spin,.twinkle,.twinkle2,.rise,.marquee{animation:none}}
 @media (max-width: 720px){.nav-price{display:none}.h1{font-size:42px !important}.offer-price{font-size:72px !important}.mosaic{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.mosaic .big{grid-column:span 2 !important;grid-row:span 1 !important}.h2b{font-size:32px !important}}
+@media (max-width: 720px){.card{padding:18px 16px 18px 122px !important}.card-img{width:108px !important;height:108px !important;margin-top:-54px !important;left:-6px !important}.previews{height:auto !important;aspect-ratio:1/1;max-height:360px}.prevbadge{left:50% !important;transform:translateX(-50%);white-space:nowrap}.offerbtn{font-size:16px !important;padding:18px 14px !important;white-space:nowrap}.offerwrap{padding:56px 14px !important}.offerin{padding:32px 18px !important}.navbtn{font-size:14px !important;padding:10px 16px !important;white-space:nowrap}.brand{font-size:18px !important}.navq{display:none}.sep{display:none}.endstars{width:100% !important;height:64px;bottom:auto !important}.endin{padding:96px 20px 40px !important;justify-content:center !important;text-align:center}.endin .btn{width:100%;justify-content:center}}
+@media (max-width: 380px){.h1{font-size:36px !important}}
 </style>
 </head>
 <body>
@@ -57,11 +59,11 @@ a{color:#fff8ee}a:hover{color:#ffffff}
 <div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
 <div style="display: flex; align-items: center; gap: 12px">
 <div style="width: 46px; height: 32px; border-radius: 4px; overflow: hidden; position: relative; flex: none; box-shadow: 0 4px 12px rgba(0,0,0,.3)"><div class="stripes-h" style="position: absolute; inset: 0"></div><div class="stars" style="position: absolute; left: 0; top: 0; width: 46%; height: 54%; background-size: 7px 6px; background-position: 0 0, 3.5px 3px"></div></div>
-<span style="font-size: 22px; font-weight: 800; letter-spacing: -.01em">American <span style="color: #ff2e4d">Sweets</span></span>
+<span class="brand" style="font-size: 22px; font-weight: 800; letter-spacing: -.01em">American <span style="color: #ff2e4d">Sweets</span></span>
 </div>
 <div style="display: flex; align-items: center; gap: 14px">
 <span class="nav-price" style="font-size: 14px; color: #b9c4dd">Pagamento único</span>
-<a class="btn" href="https://pay.cakto.com.br/cdpiksr" style="background: #ff2e4d; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Quero por R$ 14,90</a>
+<a class="btn navbtn" href="https://pay.cakto.com.br/cdpiksr" style="background: #ff2e4d; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center"><span class="navq">Quero por&nbsp;</span>R$ 14,90</a>
 </div>
 </div>
 
@@ -295,7 +297,7 @@ Pronto pro Natal
 <!-- CARDS DE LUCRO -->
 <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 40px">
 <div style="text-align: center; margin-bottom: 36px"><h2 class="h2b" style="margin: 0; font-size: 40px; font-weight: 300; letter-spacing: -.02em">Quanto custa e <span style="font-weight: 900; color: #ffd23f">por quanto vender</span></h2></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 22px">
 
 <div class="card" style="position: relative; background: #12275a; border: 1px solid rgba(255,248,238,.12); border-radius: 26px; padding: 20px 20px 20px 150px; min-height: 160px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
 <img class="card-img" src="img/donut_rosa.jpg" alt="Donut Assado" style="position: absolute; left: -10px; top: 50%; margin-top: -70px; width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 5px solid #0a1734; box-sizing: border-box; box-shadow: 0 16px 30px rgba(0,0,0,.4)">
@@ -304,7 +306,7 @@ Pronto pro Natal
 <div style="font-size: 13px; color: #b9c4dd; margin-top: 4px">Custa R$ 1,50 a unidade</div>
 </div>
 <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 10px">
-<div><div style="font-size: 12px; color: #b9c4dd">Vende por</div><div style="font-size: 24px; font-weight: 800; color: #ffd23f">R$ 6 a 8</div></div>
+<div><div style="font-size: 12px; color: #b9c4dd">Vende por</div><div style="font-size: 24px; font-weight: 800; color: #ffd23f; white-space: nowrap">R$ 6 a 8</div></div>
 <a class="btn" href="https://pay.cakto.com.br/cdpiksr" aria-label="Comprar American Sweets" style="width: 48px; height: 48px; border-radius: 14px; background: #ff2e4d; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1.2 12.2a1 1 0 0 1-1 .8H8.2a1 1 0 0 1-1-.8z"></path><path d="M9 7a3 3 0 0 1 6 0"></path></svg></a>
 </div>
 </div>
@@ -316,7 +318,7 @@ Pronto pro Natal
 <div style="font-size: 13px; color: #b9c4dd; margin-top: 4px">Custa R$ 2,50 a unidade</div>
 </div>
 <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 10px">
-<div><div style="font-size: 12px; color: #b9c4dd">Vende por</div><div style="font-size: 24px; font-weight: 800; color: #ffd23f">R$ 9 a 12</div></div>
+<div><div style="font-size: 12px; color: #b9c4dd">Vende por</div><div style="font-size: 24px; font-weight: 800; color: #ffd23f; white-space: nowrap">R$ 9 a 12</div></div>
 <a class="btn" href="https://pay.cakto.com.br/cdpiksr" aria-label="Comprar American Sweets" style="width: 48px; height: 48px; border-radius: 14px; background: #ff2e4d; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1.2 12.2a1 1 0 0 1-1 .8H8.2a1 1 0 0 1-1-.8z"></path><path d="M9 7a3 3 0 0 1 6 0"></path></svg></a>
 </div>
 </div>
@@ -328,7 +330,7 @@ Pronto pro Natal
 <div style="font-size: 13px; color: #b9c4dd; margin-top: 4px">Custa R$ 2,50 a unidade</div>
 </div>
 <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 10px">
-<div><div style="font-size: 12px; color: #b9c4dd">Vende por</div><div style="font-size: 24px; font-weight: 800; color: #ffd23f">R$ 9 a 12</div></div>
+<div><div style="font-size: 12px; color: #b9c4dd">Vende por</div><div style="font-size: 24px; font-weight: 800; color: #ffd23f; white-space: nowrap">R$ 9 a 12</div></div>
 <a class="btn" href="https://pay.cakto.com.br/cdpiksr" aria-label="Comprar American Sweets" style="width: 48px; height: 48px; border-radius: 14px; background: #ff2e4d; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1.2 12.2a1 1 0 0 1-1 .8H8.2a1 1 0 0 1-1-.8z"></path><path d="M9 7a3 3 0 0 1 6 0"></path></svg></a>
 </div>
 </div>
@@ -340,10 +342,10 @@ Pronto pro Natal
 <div id="receitas" style="background: #fff8ee; color: #0a1734; margin-top: 40px">
 <div class="stripes" style="height: 10px"></div>
 <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
-<div style="flex: 1 1 420px; min-width: 0; position: relative; height: 440px">
+<div class="previews" style="flex: 1 1 420px; min-width: 0; position: relative; height: 440px">
 <img src="img/pag1.jpg" alt="Capa do American Sweets" style="position: absolute; left: 4%; top: 30px; width: 46%; border-radius: 10px; transform: rotate(-8deg); box-shadow: 0 24px 50px rgba(10,23,52,.3)">
 <img src="img/pag7.jpg" alt="Página de receita" style="position: absolute; left: 46%; top: 30px; width: 46%; border-radius: 10px; transform: rotate(7deg); box-shadow: 0 24px 50px rgba(10,23,52,.3)">
-<div style="position: absolute; left: 28%; bottom: 0; background: #0f2557; color: #ffffff; border-radius: 999px; padding: 10px 20px; font-weight: 700; font-size: 15px; display: inline-flex; align-items: center; gap: 10px"><span style="width: 22px; height: 15px; border-radius: 2px; overflow: hidden; position: relative; display: inline-block"><span class="stripes-h" style="position: absolute; inset: 0"></span><span class="stars" style="position: absolute; left: 0; top: 0; width: 46%; height: 54%; background-size: 4px 4px"></span></span>24 receitas com foto</div>
+<div class="prevbadge" style="position: absolute; left: 28%; bottom: 0; background: #0f2557; color: #ffffff; border-radius: 999px; padding: 10px 20px; font-weight: 700; font-size: 15px; display: inline-flex; align-items: center; gap: 10px"><span style="width: 22px; height: 15px; border-radius: 2px; overflow: hidden; position: relative; display: inline-block"><span class="stripes-h" style="position: absolute; inset: 0"></span><span class="stars" style="position: absolute; left: 0; top: 0; width: 46%; height: 54%; background-size: 4px 4px"></span></span>24 receitas com foto</div>
 </div>
 <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
 <div style="font-size: 14px; font-weight: 700; color: #b22234; letter-spacing: .08em">O QUE VOCÊ RECEBE</div>
@@ -386,20 +388,20 @@ Pronto pro Natal
 </div>
 
 <!-- OFERTA -->
-<div id="comprar" style="position: relative; padding: 88px 24px">
+<div id="comprar" class="offerwrap" style="position: relative; padding: 88px 24px">
 <img src="img/bandeira.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .16">
 <div style="position: relative; max-width: 760px; margin: 0 auto; background: #0f2557; border: 2px solid rgba(255,248,238,.18); border-radius: 32px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,.5)">
 <div style="display: flex; height: 64px"><div class="stars" style="width: 34%"></div><div class="stripes-h" style="flex: 1"></div></div>
-<div style="padding: 40px 32px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<div class="offerin" style="padding: 40px 32px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
 <div style="display: inline-flex; align-items: center; gap: 8px; background: #b22234; color: #ffffff; border-radius: 999px; padding: 8px 18px; font-size: 14px; font-weight: 700">★ OFERTA DE NATAL ★</div>
 <h2 style="margin: 0; font-size: 34px; line-height: 1.15; font-weight: 300">Leve o <span style="font-weight: 900">American Sweets</span> completo</h2>
 <div style="display: flex; align-items: baseline; gap: 4px; justify-content: center; color: #ffd23f">
 <span style="font-size: 26px; font-weight: 700">R$</span><span class="offer-price" style="font-size: 96px; font-weight: 900; letter-spacing: -.04em; line-height: 1">14</span><span style="font-size: 40px; font-weight: 800">,90</span>
 </div>
 <div style="font-size: 15px; color: #c9d2e6">Pagamento único no Pix ou cartão · sem mensalidade</div>
-<a class="btn pulse" href="https://pay.cakto.com.br/cdpiksr" style="background: #ff2e4d; color: #ffffff; text-decoration: none; font-weight: 800; font-size: 20px; padding: 20px 32px; border-radius: 999px; width: 100%; max-width: 480px; box-sizing: border-box; min-height: 66px; display: inline-flex; align-items: center; justify-content: center; gap: 12px">QUERO MINHAS RECEITAS <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="btn pulse offerbtn" href="https://pay.cakto.com.br/cdpiksr" style="background: #ff2e4d; color: #ffffff; text-decoration: none; font-weight: 800; font-size: 20px; padding: 20px 32px; border-radius: 999px; width: 100%; max-width: 480px; box-sizing: border-box; min-height: 66px; display: inline-flex; align-items: center; justify-content: center; gap: 12px">QUERO MINHAS RECEITAS <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; font-size: 14px; color: #c9d2e6">
-<span>Acesso na hora no e-mail</span><span>·</span><span>Garantia de 7 dias</span><span>·</span><span>Compra segura</span>
+<span>Acesso na hora no e-mail</span><span class="sep">·</span><span>Garantia de 7 dias</span><span class="sep">·</span><span>Compra segura</span>
 </div>
 <div style="margin-top: 8px; width: 100%; box-sizing: border-box; display: flex; gap: 16px; align-items: center; text-align: left; background: rgba(255,248,238,.07); border: 1px dashed rgba(255,210,63,.5); border-radius: 18px; padding: 14px">
 <img src="img/kit3.jpg" alt="Kit Vitrine" style="width: 64px; height: 88px; object-fit: cover; border-radius: 8px; flex: none">
@@ -433,8 +435,8 @@ Pronto pro Natal
 </div>
 
 <div style="position: relative; background: #b22234; overflow: hidden">
-<div class="stars" style="position: absolute; left: 0; top: 0; bottom: 0; width: 220px; opacity: .9"></div>
-<div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 48px 24px 48px 260px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between">
+<div class="stars endstars" style="position: absolute; left: 0; top: 0; bottom: 0; width: 220px; opacity: .9"></div>
+<div class="endin" style="position: relative; max-width: 1200px; margin: 0 auto; padding: 48px 24px 48px 260px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between">
 <div style="font-size: 30px; line-height: 1.2; font-weight: 300; color: #ffffff">As encomendas de Natal<br><span style="font-weight: 900">começam agora.</span></div>
 <a class="btn" href="https://pay.cakto.com.br/cdpiksr" style="background: #ffd23f; color: #0a1734; text-decoration: none; font-weight: 800; font-size: 18px; padding: 18px 34px; border-radius: 999px; min-height: 60px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">Quero por R$ 14,90 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0a1734" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
 </div>
